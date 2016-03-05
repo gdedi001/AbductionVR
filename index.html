@@ -6,11 +6,615 @@
 		<script src="https://aframe.io/releases/latest/aframe.min.js"></script>
 	</head>
 	<body>
-		<!-- All VR markup will go between <a-scene> tags -->
 		<a-scene>
-		
+			<!-- Background image -->
 			<a-sky src="img/sky.png"></a-sky>
-		
+			<!-- required lighting for 'real colors' -->
+			<a-light type="ambient" color="#FFF"></a-light>
+			<a-light intensity="5"></a-light>
+			
+			<!-- Alien Spaceship template -->
+			<template is="a-template" element="alien-ship">
+				<a-sphere position="0 0 -6" color="red" radius="2"></a-sphere>
+				<a-entity position="0 0 -6" rotation="90 90 30" geometry="primitive: torus; radius: 2.5; segmentsTubular: 100;" material="color: #FFC65D; roughness: 0.4; metalness: 0.7;"></a-entity>
+			</template>
+			
+			
+			<!-- Alien Spaceship entity -->
+			<alien-ship></alien-ship>
+					
+			
+			<a-entity geometry="primitive: cylinder; radius: 20; height: 1600	" position="0 10 0" rotation="0 0 0" material=" side: double; opacity: .4;  open-ended: true; color:#66ff33;"></a-entity>
+			
+			<!--Set -2-->
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -410 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+				from="90 90 0"	
+				to="90 0 0"
+				repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -400 0" rotation="90 0 0" material="side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+                to="90 90 0"
+                repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -390 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -380 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -370 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -360 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -350 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -340 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			<!-- End Set -2 -->
+			
+			<!--Set -1 -->
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -270 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -260 0" rotation="90 0 0" material="side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -250 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -240 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -230 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -220 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -210 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -200 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			<!-- End Set -1 -->
+			
+			<!--Set 0 -->
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -130 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -120 0" rotation="90 0 0" material="side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -110 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -100 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -90 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -80 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -70 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 -60 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			<!-- End Set 0-->
+			
+			 <!--Set 1-->
+			<a-entity geometry="primitive: torus; radius: 15" position="0 10 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 20 0" rotation="90 0 0" material="side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 30 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			  <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 40 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 50 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 60 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 70 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 80 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			
+			<!--Set 2-->
+			<a-entity geometry="primitive: torus; radius: 15" position="0 150 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 160 0" rotation="90 0 0" material="side: double; opacity: 1; color:#80ff80;">
+			  <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 170 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			  <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 180 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 190 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 200 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 210 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 220 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			<!-- End Set 2-->
+			
+			<!--Set 3-->
+			<a-entity geometry="primitive: torus; radius: 15" position="0 290 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 300 0" rotation="90 0 0" material="side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 310 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 320 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 330 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 340 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 350 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 360 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			<!-- End Set 3 -->
+			
+			<!--Set 4-->
+			<a-entity geometry="primitive: torus; radius: 15" position="0 430 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			 
+			<a-entity geometry="primitive: torus; radius: 15" position="0 440 0" rotation="90 0 0" material="side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 450 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 460 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 470 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 480 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 490 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 500 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			<!-- End Set 4 -->
+			
+			<!--Set 5-->
+			<a-entity geometry="primitive: torus; radius: 15" position="0 570 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 580 0" rotation="90 0 0" material="side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 590 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 600 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 610 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 620 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 630 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			<a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 640 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+
+			<!--Set 5-->
+			<a-entity geometry="primitive: torus; radius: 15" position="0 710 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 720 0" rotation="90 0 0" material="side: double; opacity: 1; color:#80ff80;">
+			 	<a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 730 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 740 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 750 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 760 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 770 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 780 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<!--Set 5-->
+			<a-entity geometry="primitive: torus; radius: 15" position="0 850 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			 <a-entity geometry="primitive: torus; radius: 15" position="0 860 0" rotation="90 0 0" material="side: double; opacity: 1; color:#80ff80;">
+			  <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			 <a-entity geometry="primitive: torus; radius: 15" position="0 870 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			  <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 880 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			  <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 890 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 900 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+                to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 910 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+			 <a-animation attribute="rotation"
+			 	from="90 90 0"	
+               	to="90 0 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			<a-entity geometry="primitive: torus; radius: 15" position="0 920 0" rotation="90 0 0" material=" side: double; opacity: 1; color:#80ff80;">
+			 <a-animation attribute="rotation"
+			 	from="90 0 0"	
+               	to="90 90 0"
+               	repeat="indefinite"></a-animation>
+			</a-entity>
+			
+			
+			<a-entity position="0 115 0" camera look-controls="enabled: true" cursor-visible="enabled: false" wasd-controls="enabled: true; acceleration: 500">
+			 <a-animation id="ride" attribute="position" from="0 0 0" to="0 235 0" repeat="100" easing="linear" dur="500"></a-animation> 
+			 <a-animation begin="click" easing="linear" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="500"></a-animation>   
+			 <a-animation begin="fusing" easing="linear" attribute="scale" fill="forwards" from="1 1 1" to="0.1 0.1 0.1" dur="3000"></a-animation>      
+   			</a-entity>
+			
+			<!-- Camera -->
+			<a-entity id="cursor" cursor="fuse: true;  maxDistance: 10; timeout: 100" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: red" opacity="0.5" position="0 0 -2"> </a-entity>
+			
+			<!-- CAMERA 
+			<a-camera wasd-controls-enabled="false" cursor-scale="3" cursor-visible="false" position="0 1.8 4"></a-camera>-->
 		</a-scene>
 	</body>
 </html>
