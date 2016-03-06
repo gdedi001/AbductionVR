@@ -14,17 +14,55 @@
 			<a-light intensity="5"></a-light>
 			
 			<!-- Alien Spaceship template -->
-			<template is="a-template" element="aliens-ship">
-  				<a-sphere position="0 0 -6" color="red" radius="2"></a-sphere>
-				<a-entity position="0 0 -6" rotation="90 90 30" geometry="primitive: torus; radius: 2.5; segmentsTubular: 100;" material="color: #FFC65D; roughness: 0.4; metalness: 0.7;"></a-entity>
+			<template is="a-template" element="aliens-ship">				
+				<a-entity position="0 1.5 0" rotation="0 0 0" geometry="primitive: cylinder; radius: 35.2; height: 2.5; openEnded: false;" material="color: #000000; roughness: 0.2; metalness: 0.5;"></a-entity>
+				<a-entity position="0 0 0" rotation="90 90 30" geometry="primitive: torus; radius: 35.5; segmentsTubular: 100;" material="color: #00ff00; roughness: 0.4; metalness: 0.7;"></a-entity>
+				<a-sphere color="white" radius="1">
+					<a-animation attribute="position" 
+						from="33 0 0" 
+						to="-33 0 0" 
+						dur="5000" 
+						repeat="indefinite"
+						fill="forwards"
+						direction="alternate"></a-animation>
+				</a-sphere>
+				<a-sphere color="white" radius="1">
+					<a-animation attribute="position" 
+						from="-33 0 0" 
+						to="33 0 0" 
+						dur="5000" 
+						repeat="indefinite"
+						fill="forwards"
+						direction="alternate"></a-animation>
+				</a-sphere>
+				<a-sphere color="white" radius="1">
+					<a-animation attribute="position" 
+						from="0 0 33" 
+						to="0 0 -33" 
+						dur="5000" 
+						repeat="indefinite"
+						fill="forwards"
+						direction="alternate"></a-animation>
+				</a-sphere>
+				<a-sphere color="white" radius="1">
+					<a-animation attribute="position" 
+						from="0 0 -33" 
+						to="0 0 33" 
+						dur="5000" 
+						repeat="indefinite"
+						fill="forwards"
+						direction="alternate"></a-animation>
+				</a-sphere>
+				
 			</template>
 			
 			<!-- Abduction sphere template Rotation (1) -->
 			<template is="a-template" element="abduction-sphere">
-				<a-entity geometry="primitive: torus; radius: 15" rotation="0 0 0" material=" side: double; opacity: 1; color:#00cc00;">
+				<a-entity geometry="primitive: torus; radius: 15" rotation="0 0 0" material=" side: double; opacity: 1; color:#ff0066;">
 					<a-animation attribute="rotation"
-						from="90 90 0"	
+						from="90 20020 0"	
 						to="90 0 0"
+						dur="2000"
 						repeat="indefinite"></a-animation>
 				</a-entity>
 			</template>
@@ -33,48 +71,100 @@
 			<template is="a-template" element="abduction-sphere-inv">
 				<a-entity geometry="primitive: torus; radius: 15" rotation="0 0 0" material=" side: double; opacity: 1; color:#00cc00;">
 					<a-animation attribute="rotation"
-						from="90 -90 0"	
 						to="90 0 0"
-						repeat="indefinite"></a-animation>
+						dur="2000"></a-animation>
 				</a-entity>
 			</template>
 			
+			
 			<!-- Alien Spaceship entity 
-				<a-animation attribute="rotation"
-				   to="0 360 0"
+				<a-animation attribute="position"
+				   to="0 270 0"
 				   dur="5000"
+				   begin="2000"
 				   ease="linear"
-				   fill="none"
-				   repeat="indefinite"></a-animation>
+				   ></a-animation>
 			-->
-			<aliens-ship position="0 40 -70" rotation="0 0 0"></aliens-ship>
+			<aliens-ship position="0 70 -180" rotation="0 0 0">
+			</aliens-ship>
+
 			
 			<!-- Abduction Spherer entities 
 			<abduction-sphere position="0 0 0"></abduction-sphere>
+			<abduction-sphere-inv position="0  0"></abduction-sphere-inv>
+			<abduction-sphere position="0 15 0"></abduction-sphere>
 			<abduction-sphere-inv position="0 20 0"></abduction-sphere-inv>
-			<abduction-sphere position="0 30 0"></abduction-sphere>
+			<abduction-sphere position="0 25 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 30 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 35 0"></abduction-sphere>
 			<abduction-sphere-inv position="0 40 0"></abduction-sphere-inv>
-			<abduction-sphere position="0 50 0"></abduction-sphere>
+			<abduction-sphere position="0 45 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 50 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 55 0"></abduction-sphere>
 			<abduction-sphere-inv position="0 60 0"></abduction-sphere-inv>
-			<abduction-sphere position="0 70 0"></abduction-sphere>
-			<abduction-sphere-inv position="0 80 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 65 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 70 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 75 0"></abduction-sphere>
+			<abduction-sphere position="0 80 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 85 0"></abduction-sphere-inv>
 			<abduction-sphere position="0 90 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 110 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 111 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 113 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 115 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 117 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 118 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 120 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 123 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 126 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 130 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 265 0"></abduction-sphere-inv>
+			<abduction-sphere-inv position="0 10 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 20 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 30 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 40 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 50 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 60 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 70 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 90 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 100 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 110 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 120 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 130 0"></abduction-sphere>
 			<abduction-sphere-inv position="0 140 0"></abduction-sphere-inv>
-			<abduction-sphere position="0 180 0"></abduction-sphere>
+			<abduction-sphere position="0 150 0"></abduction-sphere>
+			<abduction-sphere position="0 0 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 160 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 170 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 180 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 190 0"></abduction-sphere>
 			<abduction-sphere-inv position="0 200 0"></abduction-sphere-inv>
-			<abduction-sphere position="0 210 0"></abduction-sphere>
-			<abduction-sphere-inv position="0 220 0"></abduction-sphere-inv>
-			<abduction-sphere position="0 250 0"></abduction-sphere>
+			<abduction-sphere position="0 200 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 210 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 220 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 230 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 240 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 250 0"></abduction-sphere-inv>
+			<abduction-sphere position="0 260 0"></abduction-sphere>
+			<abduction-sphere-inv position="0 265 0"></abduction-sphere-inv>
 			-->
+			
 					
 			<!-- Green aura effect for abduction sequence 
 			<a-entity geometry="primitive: cylinder; radius: 20; height: 1600	" position="0 10 0" rotation="0 0 0" material=" side: double; opacity: .4;  open-ended: true; color:#66ff33;">
-			</a-entity>-->
+			</a-entity>
+			-->
 			
 			
-			
-			<!-- CAMERA -->
-			<a-camera wasd-controls-enabled="false" cursor-scale="1" cursor-visible="true" color="blue" position="0 0 0"></a-camera>
+			<!-- CAMERA 
+					from="0 0 0" 
+					to="0 230 0"
+					easing="linear"
+					dur="8000"
+					begin="10000">
+			-->gi
+			<a-entity position="0 0 0" camera look-controls="enabled: true" cursor-visible="enabled: false" wasd-controls="enabled: true">
+ 			</a-entity>
 		</a-scene>
 	</body>
 </html>
