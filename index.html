@@ -15,13 +15,14 @@
 			
 			<!-- Alien Spaceship template -->
 			<template is="a-template" element="aliens-ship">				
-				<a-entity position="0 1.5 0" rotation="0 0 0" geometry="primitive: cylinder; radius: 35.2; height: 2.5; openEnded: false;" material="color: #000000; roughness: 0.2; metalness: 0.5;"></a-entity>
-				<a-entity position="0 0 0" rotation="90 90 30" geometry="primitive: torus; radius: 35.5; segmentsTubular: 100;" material="color: #00ff00; roughness: 0.4; metalness: 0.7;"></a-entity>
+				<a-entity position="0 1.5 0" rotation="0 0 0" geometry="primitive: cylinder; radius: 35.2; height: 2.5; openEnded: false;" material="color: #000000"></a-entity>
+				<a-entity position="0 0 0" rotation="90 90 30" geometry="primitive: torus; radius: 35.5; segmentsTubular: 100;" material="color: #00ff00"></a-entity>
+<!--
 				<a-sphere color="white" radius="1">
 					<a-animation attribute="position" 
 						from="33 0 0" 
 						to="-33 0 0" 
-						dur="5000" 
+						dur="1000" 
 						repeat="indefinite"
 						fill="forwards"
 						direction="alternate"></a-animation>
@@ -30,7 +31,7 @@
 					<a-animation attribute="position" 
 						from="-33 0 0" 
 						to="33 0 0" 
-						dur="5000" 
+						dur="1000" 
 						repeat="indefinite"
 						fill="forwards"
 						direction="alternate"></a-animation>
@@ -39,7 +40,7 @@
 					<a-animation attribute="position" 
 						from="0 0 33" 
 						to="0 0 -33" 
-						dur="5000" 
+						dur="1000" 
 						repeat="indefinite"
 						fill="forwards"
 						direction="alternate"></a-animation>
@@ -48,12 +49,12 @@
 					<a-animation attribute="position" 
 						from="0 0 -33" 
 						to="0 0 33" 
-						dur="5000" 
+						dur="1000" 
 						repeat="indefinite"
 						fill="forwards"
 						direction="alternate"></a-animation>
 				</a-sphere>
-				
+-->
 			</template>
 			
 			<!-- Abduction sphere template Rotation (1) -->
@@ -62,7 +63,7 @@
 					<a-animation attribute="rotation"
 						from="90 20020 0"	
 						to="90 0 0"
-						dur="2000"
+						dur="1000"
 						repeat="indefinite"></a-animation>
 				</a-entity>
 			</template>
@@ -72,7 +73,7 @@
 				<a-entity geometry="primitive: torus; radius: 15" rotation="0 0 0" material=" side: double; opacity: 1; color:#00cc00;">
 					<a-animation attribute="rotation"
 						to="90 0 0"
-						dur="2000"></a-animation>
+						dur="1000"></a-animation>
 				</a-entity>
 			</template>
 			
@@ -85,7 +86,15 @@
 				   ease="linear"
 				   ></a-animation>
 			-->
-			<aliens-ship position="0 70 -180" rotation="0 0 0">
+			<aliens-ship position="0 2000 -180" rotation="0 0 0">
+				<a-animation attribute="position"
+				   from="0 70 -2180"
+				   to="0 270 0"
+				   dur="10000"
+				   begin="launch"
+				   ease="linear"
+				   direction="alternate">
+				</a-animation>
 			</aliens-ship>
 
 			
@@ -162,8 +171,8 @@
 					easing="linear"
 					dur="8000"
 					begin="10000">
-			-->gi
-			<a-entity position="0 0 0" camera look-controls="enabled: true" cursor-visible="enabled: false" wasd-controls="enabled: true">
+			-->
+			<a-entity position="0 0 0" camera look-controls="enabled: true" cursor-visible="enabled: false">
  			</a-entity>
 		</a-scene>
 	</body>
