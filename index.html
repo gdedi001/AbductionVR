@@ -12,7 +12,9 @@
 			<!-- required lighting for 'real colors' -->
 			<a-light type="ambient" color="#FFF"></a-light>
 			<a-light intensity="5"></a-light>
-			
+
+            <!-- VideoSphere Stobing Lights-->
+            <a-videosphere src="img/cows.mp4" radius="1000"></a-videosphere>
 			<!-- Alien Spaceship template -->
 			<template is="a-template" element="aliens-ship">
   				<a-sphere position="0 0 -6" color="red" radius="2"></a-sphere>
@@ -49,7 +51,7 @@
 			-->
 			<aliens-ship position="0 40 -70" rotation="0 0 0"></aliens-ship>
 			
-			<!-- Abduction Spherer entities 
+			 <!--Abduction Spherer entities--> 
 			<abduction-sphere position="0 0 0"></abduction-sphere>
 			<abduction-sphere-inv position="0 20 0"></abduction-sphere-inv>
 			<abduction-sphere position="0 30 0"></abduction-sphere>
@@ -65,16 +67,21 @@
 			<abduction-sphere position="0 210 0"></abduction-sphere>
 			<abduction-sphere-inv position="0 220 0"></abduction-sphere-inv>
 			<abduction-sphere position="0 250 0"></abduction-sphere>
-			-->
+			
 					
-			<!-- Green aura effect for abduction sequence 
+			 <!--Green aura effect for abduction sequence--> 
 			<a-entity geometry="primitive: cylinder; radius: 20; height: 1600	" position="0 10 0" rotation="0 0 0" material=" side: double; opacity: .4;  open-ended: true; color:#66ff33;">
-			</a-entity>-->
+			</a-entity>
 			
 			
 			
 			<!-- CAMERA -->
-			<a-camera wasd-controls-enabled="false" cursor-scale="1" cursor-visible="true" color="blue" position="0 0 0"></a-camera>
+			 <a-entity position="0 115 0" camera look-controls="enabled: true" cursor-visible="enabled: false" wasd-controls="enabled: true; acceleration: 100">
+  <a-animation id="ride" attribute="position" from="0 0 0" to="0 235 0" repeat="0" easing="linear" dur="5000" ></a-animation> 
+   <a-entity id="cursor" cursor="fuse: true;  maxDistance: 10; timeout: 100" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: red" opacity="0.5" position="0 0 -2">    
+    <a-animation begin="click" easing="linear" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="500"></a-animation>   
+    <a-animation begin="fusing" easing="linear" attribute="scale" fill="forwards" from="1 1 1" to="0.1 0.1 0.1" dur="3000"></a-animation>      
+   </a-entity>
 		</a-scene>
 	</body>
 </html>
